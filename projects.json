@@ -2,7 +2,7 @@
     {
       "name": "Book Club",
       "url": "https://lively-hotteok-d76e00.netlify.app/index.html?source=rasmus.json",
-      "icon": "/icons/book.png",
+      "icon": "icons/book.png",
       "tag": "beta"
     },
     {
@@ -14,13 +14,13 @@
     {
       "name": "Tennis Dashboard",
       "url": "https://rasmuskoriis.github.io/tennis-dashboard/",
-      "icon": "/icons/tennis.png",
+      "icon": "icons/tennis.png",
       "tag": "beta"
     },
     {
       "name": "Food Planner",
       "url": "https://rasmuskoriis.github.io/food/",
-      "icon": "/icons/food.png",
+      "icon": "icons/food.png",
       "tag": "beta"
     }
   ]
