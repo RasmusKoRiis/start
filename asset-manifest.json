@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/start/static/css/main.b66e60cc.css",
+    "main.js": "/start/static/js/main.333669d3.js",
+    "static/js/453.c71a4e89.chunk.js": "/start/static/js/453.c71a4e89.chunk.js",
+    "static/media/Jersey-15.woff": "/start/static/media/Jersey-15.96d632a8779eec834c80.woff",
+    "static/media/Jersey-15.woff2": "/start/static/media/Jersey-15.d323391e8388f4110fb5.woff2",
+    "index.html": "/start/index.html",
+    "main.b66e60cc.css.map": "/start/static/css/main.b66e60cc.css.map",
+    "main.333669d3.js.map": "/start/static/js/main.333669d3.js.map",
+    "453.c71a4e89.chunk.js.map": "/start/static/js/453.c71a4e89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b66e60cc.css",
+    "static/js/main.333669d3.js"
+  ]
+}
