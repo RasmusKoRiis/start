@@ -8,10 +8,11 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    fetch("/projects.json")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
-  }, []);
+    // CRA automatically replaces PUBLIC_URL with "/start" at build time
+    fetch(`${process.env.PUBLIC_URL}/projects.json`)
+      .then(res => res.json())
+      .then(data => setProjects(data));
+  }, []);  
 
   const filteredProjects = projects.filter((p) =>
     p.name.toLowerCase().includes(searchTerm.toLowerCase())
