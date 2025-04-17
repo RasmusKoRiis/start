@@ -1,0 +1,133 @@
+:root {
+    --bg: #f5f5f5;
+    --text: #222;
+    --card: white;
+    --hover: #e0e0e0;
+  }
+  body.dark {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --card: #1e1e1e;
+    --hover: #333;
+  }
+  body {
+    font-family: 'Jersey-15', Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .controls {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Optional: stack to one column on narrow screens */
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+/* Make each .project a flex container to center content */
+.project {
+  display: flex;
+  flex-direction: column;       /* Icon + text stacked vertically */
+  align-items: center;         /* Center horizontally */
+  justify-content: center;     /* Center vertically */
+  aspect-ratio: 1 / 1;         /* Keeps it square */
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: var(--card);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Let the icon fill most of the card without distorting */
+.project img,
+.project svg {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* Keep the name and tag below the icon */
+.project-name {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.project-tag {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  padding: 2px 6px;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: #ffdd57;
+  color: #000;
+}
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--hover);
+  }
+  .project img, .project svg {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+  .project-name {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .project-tag {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    padding: 2px 6px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #ffdd57;
+    color: #000;
+  }
+
+  @font-face {
+    font-family: 'Jersey-15';
+    src: url('/fonts/Jersey-15.woff2') format('woff2'),
+         url('/fonts/Jersey-15.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  a {
+    color: #c1121f;
+    text-decoration: none;
+  }
+  

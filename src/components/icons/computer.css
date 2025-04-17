@@ -1,0 +1,40 @@
+.computer-svg #code-cover-screen {
+    animation: scrollCodeIn 4s forwards;
+  }
+  
+  @keyframes scrollCodeIn {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(180px);
+      opacity: 1;
+    }
+  }
+  
+  .computer-svg #scrolling-code {
+    animation: scrollCode 3s 1.65s linear infinite;
+  }
+  
+  @keyframes scrollCode {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    49.99% {
+      transform: translateY(-80px);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(87px);
+      opacity: 0;
+    }
+    50.01% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
