@@ -22,6 +22,12 @@
       "url": "https://rasmuskoriis.github.io/food/",
       "icon": "icons/food.png",
       "tag": "beta"
+    },
+    {
+      "name": "Budget Tracker",
+      "url": "https://rasmuskoriis.github.io/budget-tracker/",
+      "icon": "icons/money.png",
+      "tag": "beta"
     }
   ]
   
